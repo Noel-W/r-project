@@ -5,3 +5,16 @@ date: "29 1 2021"
 output: html_document
 ---
 
+```{r}
+library(tidyverse)
+library(readxl)
+library(here)
+```
+
+```{r}
+ca_np <- read_csv(here("data", "ca_np.csv"))
+```
+```{r}
+ci_np <- read_excel(here("data", "ci_np.xlsx"))
+```
+
