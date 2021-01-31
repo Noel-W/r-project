@@ -72,3 +72,14 @@ gg_np +
     aes(color = park_name)
   )
 ```
+```{r}
+gg_np +
+  geom_line(show.legend = FALSE) +
+  theme_light() + 
+  labs(x = "year", y = "annual visitors") +
+  facet_wrap(~ park_name)
+```
+```{r}
+ggsave(here("figures", "np_graph.jpg"), dpi = 180, width = 8, height = 7)
+```
+
